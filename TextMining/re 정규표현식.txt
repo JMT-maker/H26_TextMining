@@ -112,9 +112,9 @@ print(new_date)
 
 text = "apple 100, banana 200"
 def double_number(match):
-    # 매칭된 숫자 객체를 가져와서 2배로 계산
-    val = int(match.group())
-    return str(val * 2)
+	# 매칭된 숫자 객체를 가져와서 2배로 계산
+	val = int(match.group())
+	return str(val * 2)
 # 숫자를 찾아 함수를 적용
 print(re.sub(r'\d+', double_number, text))
 # 결과: "apple 200, banana 400"
